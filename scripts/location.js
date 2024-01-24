@@ -1,32 +1,3 @@
-function getText(text, countrycode)
-{
-    const data = JSON.stringify({
-        q: text,
-        source: 'en',
-        target: countrycode,
-        format: 'text'
-    });
-    
-    const xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-    
-    xhr.addEventListener('readystatechange', function () {
-        if (this.readyState === this.DONE) {
-            localStorage.setItem("texts", this.responseText)
-        }
-    });
-    
-    xhr.open('POST', 'https://google-translator9.p.rapidapi.com/v2');
-    xhr.setRequestHeader('content-type', 'application/json');
-    xhr.setRequestHeader('X-RapidAPI-Key', '11afcd18e2msh70d16f51cfb8189p1e4487jsnb40b06717259');
-    xhr.setRequestHeader('X-RapidAPI-Host', 'google-translator9.p.rapidapi.com');
-    
-    xhr.send(data);
-    const stringData = localStorage.getItem("texts");
-    const objectData= JSON.parse(stringData);
-    return objectData.data.translations[0].translatedText;
-
-}
 function displayGeolocation(country, city, district, countrycode)
 {
     const data = null;
@@ -59,14 +30,10 @@ function displayGeolocation(country, city, district, countrycode)
         }
         language = country_lang.name
     }
-    // get our page text translation using countrycode
-    let text = "Translate to your langauage of choice";
-    text = getText(text, countrycode.toLowerCase());
     // now get translation for the html content you want to display
     let htmlcontent = `
         <p>Your region detected is ${district} district, ${city} city, ${country}.</p>
         <p>language detected ${language}.</p>
-        <p>${text}</p>
     `;
     localStorage.setItem("html-content", htmlcontent);
     window.location.href = './translate.html'
