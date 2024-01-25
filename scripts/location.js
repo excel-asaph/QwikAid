@@ -32,8 +32,10 @@ function displayGeolocation(country, city, district, countrycode)
     }
     // now get translation for the html content you want to display
     let htmlcontent = `
-        <p class='pstyle'>Your region detected is ${district} district, ${city} city, ${country}.</p>
-        <p>language detected ${language}.</p>
+        <div class='main-box'>
+            <p class='pstyle'>Your region detected is ${district} district, ${city} city, ${country}.</p>
+            <p>language detected ${language}.</p>
+        </div>
     `;
     localStorage.setItem("html-content", htmlcontent);
     window.location.href = './translate.html'
