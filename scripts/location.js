@@ -19,6 +19,15 @@ function ReverseGeocoding(location, callback) {
     };
 
     req_obj.send();
+    const buttonDisplay = document.querySelector('.former-btn');
+    const buttonTwoDisplay = document.querySelector('#next-location');
+    buttonDisplay.classList.add('not-allow');
+    buttonTwoDisplay.classList.remove('not-allow')
+    const divAfterText = document.querySelector("#below-text");
+    const htmlContent = `
+        <p></p>
+    `;
+    divAfterText.innerHTML = htmlContent;
 }
 
 function geoFindMe() {
