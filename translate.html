@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="./styles/translate.css">
         <title>translate</title>
     </head>
     <body>
@@ -11,8 +12,8 @@
                 new google.translate.TranslateElement(
                     {
                         pageLanguage: "en",
-                        includedLanguages: 'fr,en,rw',
-                        multilanguagePage: false,
+                        includedLanguages: 'rw,fr,en',
+                        multilanguagePage: true,
                         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
                         autoDisplay: true,
                         gaTrack: false,
