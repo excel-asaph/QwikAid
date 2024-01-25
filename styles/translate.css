@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(42, 145, 126); */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-color: #28314e;
+}
+
+.main-box {
+ 
+    width: 80%;
+    height: 200px;
+    color: #ffffff;
+    border-radius: 0.8rem;
+}
+
+.main-box .pstyle {
+    margin-top: 2rem;
+}
+
+div img {
+    display: none;
+}
+
+div .goog-te-gadget-simple {
+    background-color: #e50914;
+    font-size: 3rem;
+    margin-bottom: 10rem;
+    border-radius: 1rem;
+}
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+    color: white;
+    background-color: #e50914;
+}
