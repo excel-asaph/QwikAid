@@ -7,6 +7,43 @@ document.addEventListener('DOMContentLoaded', function() {
     const serviceBtnDiv3 = document.querySelectorAll('.serv-btn3');
     const backButton = document.querySelectorAll('.return');
 
+    // Call-btn
+    const callButton = document.querySelector('.call-btn');
+    const callButton1 = document.querySelector('.call-btn1');
+    const callButton2 = document.querySelector('.call-btn2');
+    const callButton3 = document.querySelector('.call-btn3');
+    
+    callButton.addEventListener('click', function() {
+        const phoneNumber = "112"; // Police Number
+        const telUri = `tel:${phoneNumber}`;
+        
+        window.open(telUri);
+    });
+
+    callButton1.addEventListener('click', function() {
+        const phoneNumber = "113"; // Ambulance
+        const telUri = `tel:${phoneNumber}`;
+        
+        window.open(telUri);
+    });
+
+    callButton2.addEventListener('click', function() {
+        const phoneNumber = "3512"; // GBV
+        const telUri = `tel:${phoneNumber}`;
+        
+        window.open(telUri);
+    });
+
+    callButton3.addEventListener('click', function() {
+        const phoneNumber = "170"; // Natural Disaster
+        const telUri = `tel:${phoneNumber}`;
+        
+        window.open(telUri);
+    });
+
+
+
+
     // thefts
     const theftIdCall = document.querySelectorAll('.theft-id-call');
     const theftIdText = document.querySelectorAll('.theft-id-text');
@@ -103,15 +140,20 @@ document.addEventListener('DOMContentLoaded', function() {
     function hideTranslator() {
         const getTranslator = document.querySelector('#translate');
         const getLanguageText = document.querySelector('#cleartext');
+        const getLanguageText2 = document.querySelector('#cleartext2');
         const translateButton = document.querySelector('.button-services');
+        const backButton = document.querySelector('.return');
         console.log(getTranslator);
         const firstDiv = document.querySelector('.service-tabs');
         console.log(firstDiv);
         firstDiv.classList.add('first');
         firstDiv.classList.remove('prev');
         firstDiv.classList.add('current');
+        backButton.classList.remove('prev');
+        backButton.classList.add('current');
         getTranslator.classList.add('hide-translator');
         getLanguageText.classList.add('hide-translator');
+        getLanguageText2.classList.add('hide-translator');
         translateButton.classList.add('hide-translator');
     }
 
@@ -177,6 +219,8 @@ function goback() {
     const healthDiv = document.querySelector('#health-id');
     const gbvDiv = document.querySelector('#gbv-id');
     const naturalDiv = document.querySelector('#natural-id');
+    const serviceDiv = document.querySelector('.service-tabs');
+
 
     //thefts
     const theftCall = document.querySelector('#theft-call');
@@ -323,6 +367,20 @@ function goback() {
         naturalVideo.classList.add('prev');
         naturalId.classList.remove('prev');
         naturalId.classList.add('current');
+    } else if (serviceDiv.classList.contains('first') && serviceDiv.classList.contains('current')) {
+        const getTranslator = document.querySelector('#translate');
+        const getLanguageText = document.querySelector('#cleartext');
+        const getLanguageText2 = document.querySelector('#cleartext2');
+        const translateButton = document.querySelector('.button-services');
+        const returnButton = document.querySelector('.return');
+        serviceDiv.classList.remove('current');
+        serviceDiv.classList.add('prev');
+        getTranslator.classList.remove('hide-translator');
+        getLanguageText.classList.remove('hide-translator');
+        getLanguageText2.classList.remove('hide-translator');
+        translateButton.classList.remove('hide-translator');
+        returnButton.classList.remove('current');
+        returnButton.classList.add('prev');
     }
 }
 

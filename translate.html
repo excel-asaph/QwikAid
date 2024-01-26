@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./styles/translate.css">
         <title>translate</title>
         <script src="https://kit.fontawesome.com/3c31c60669.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles/translate.css">
     </head>
     <body>
         <div id="translate-main">
@@ -26,14 +26,14 @@
                 }
             </script>
             <div>
-                <button class='button-services' type='submit'>NEXT>></button>       
+                <button class='button-services' type='submit'>NEXT <i class="fa-solid fa-angles-right"></i></button>       
             </div>
             <div>
-                <button class='return' type='submit'>BACK</button>       
+                <button class='return prev' type='submit'><i class="fa-solid fa-angles-left"></i> BACK</button>       
             </div>
 
             <div class="service-tabs prev">
-                <div>
+                <div class="service-head">
                     <h1>What's Your Emergency?</h1>
                 </div>
 
@@ -56,188 +56,282 @@
 
             <div id="theft-id" class="theft-tabs prev">
                 <div class="action-head">
-                    <h1>Theft Action</h1>
+                    <h1>Take Action</h1>
                 </div>
 
                 <div class="theft-id-call">
-                    <button class="call-btn">CALL</button>
+                    
+                    <button class="call-btn call-color">CALL POLICE <i class="fa-solid fa-phone call-icon"></i></button>
                 </div>
 
                 <div class="theft-id-text">
-                    <button>TEXT</button>
+                    <button class="text-btn">SEND A QUICK MESSAGE <i class="fa-solid fa-envelope text-icon"></i></button>
                 </div>
 
                 <div class="theft-id-audio">
-                    <button>TAKE A PHOTO</button>
+                    <button class="audio-btn">SEND AUDIO <i class="fa-solid fa-microphone"></i></button>
                 </div>
 
                 <div class="theft-id-video">
-                    <button>RECORD VIDEO</button>
+                    <button class="video-btn">RECORD VIDEO/PHOTO <i class="fa-solid fa-camera"></i></button>
                 </div>
             </div>
 
             <div id="health-id" class="health-tabs prev">
                 <div class="action-head">
-                    <h1>Health Action</h1>
+                    <h1>Take Action</h1>
                 </div>
 
                 <div class="health-id-call">
-                    <button class="call-btn">CALL</button>
+                    <button class="call-btn1 call-color">CALL AMBULANCE <i class="fa-solid fa-phone call-icon"></i></button>
                 </div>
 
                 <div class="health-id-text">
-                    <button>TEXT</button>
+                    <button>CONTACT NEARBY HOSPITALS <i class="fa-solid fa-location-dot contact-icon"></i></button>
                 </div>
 
                 <div class="health-id-audio">
-                    <button>TAKE A PHOTO</button>
+                    <button>SEND AUDIO <i class="fa-solid fa-microphone"></i></button>
                 </div>
 
                 <div class="health-id-video">
-                    <button>RECORD VIDEO</button>
+                    <button>RECORD VIDEO/PHOTO <i class="fa-solid fa-camera"></i></button>
                 </div>
             </div>
 
             <div id="gbv-id" class="gbv-tabs prev">
                 <div class="action-head">
                     <h1>GBV Action</h1>
+                    <p>(Gender Based Violence)</p>
                 </div>
 
                 <div class="gbv-id-call">
-                    <button class="call-btn">CALL</button>
+                    <button class="call-btn2 call-color">CALL POLICE <i class="fa-solid fa-phone call-icon"></i></button>
                 </div>
 
                 <div class="gbv-id-text">
-                    <button>TEXT</button>
+                    <button>CONTACT MIGEPROF<p>(Minister of Gender and Family Promotion)</p></button>
                 </div>
 
                 <div class="gbv-id-audio">
-                    <button>TAKE A PHOTO</button>
+                    <button>SEND AUDIO <i class="fa-solid fa-microphone"></i></button>
                 </div>
 
                 <div class="gbv-id-video">
-                    <button>RECORD VIDEO</button>
+                    <button>RECORD VIDEO/PHOTO <i class="fa-solid fa-camera"></i></button>
                 </div>
             </div>
 
             <div id="natural-id" class="natural-tabs prev">
                 <div class="action-head">
-                    <h1>Natural DISASTER Action</h1>
+                    <h1>Disaster Action</h1>
                 </div>
 
                 <div class="natural-id-call">
-                    <button class="call-btn">CALL</button>
+                    <button class="call-btn3 call-color">CALL MINEMA <i class="fa-solid fa-phone call-icon"></i></button>
                 </div>
 
                 <div class="natural-id-text">
-                    <button>TEXT</button>
+                    <button>SEEK NEARBY SHELTER <i class="fa-solid fa-location-dot contact-icon"></i></button>
                 </div>
 
                 <div class="natural-id-audio">
-                    <button>TAKE A PHOTO</button>
+                    <button>SEND AUDIO <i class="fa-solid fa-microphone"></i></button>
                 </div>
 
                 <div class="natural-id-video">
-                    <button>RECORD VIDEO</button>
+                    <button>RECORD VIDEO/PHOTO <i class="fa-solid fa-camera"></i></button>
                 </div>
             </div>
 
             <!-- Theft -->
             <div id="theft-call" class="prev">
                 <div>
-                    <p>Calling</p>
+                    <p class="in-progress"><em>Calling...</em></p>
                 </div>
             </div>
 
             <div id="theft-text" class="prev">
                 <div>
-                    <p>texting</p>
+                    <form action="">
+                        <div class="messagebox-id">
+                            <textarea name="message" id="text-issue" cols="100" rows="20"></textarea>
+                        </div>
+                        
+                        <div>
+                            <input type="submit" value="Send Message" class="button-issue">
+                        </div>
+                        
+                    </form>
+                    <div class="help-tips">
+                        <h3>STAY CLAM AND ALERT!</h3>
+                        <p class="help-first">HELP is on the way</p>
+                        <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                        <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
+                    </div>
                 </div>
             </div>
 
             <div id="theft-audio" class="prev">
                 <div>
-                    <p>Send Audio</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <div id="theft-video" class="prev">
                 <div>
-                    <p>Record Video</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <!-- Health -->
             <div id="health-call" class="prev">
                 <div>
-                    <p>Calling</p>
+                    <p class="in-progress"><em>Calling...</em></p>
                 </div>
             </div>
 
             <div id="health-text" class="prev">
                 <div>
-                    <p>texting</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <div id="health-audio" class="prev">
                 <div>
-                    <p>Send Audio</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <div id="health-video" class="prev">
                 <div>
-                    <p>Record Video</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <!-- GBV -->
             <div id="gbv-call" class="prev">
                 <div>
-                    <p>Calling</p>
+                    <p class="in-progress"><em>Calling...</em></p>
                 </div>
             </div>
 
             <div id="gbv-text" class="prev">
                 <div>
-                    <p>texting</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <div id="gbv-audio" class="prev">
                 <div>
-                    <p>Send Audio</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <div id="gbv-video" class="prev">
                 <div>
-                    <p>Record Video</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
             <!-- Natural -->
             <div id="natural-call" class="prev">
                 <div>
-                    <p>Calling</p>
+                    <p class="in-progress"><em>Calling...</em></p>
                 </div>
             </div>
 
             <div id="natural-text" class="prev">
                 <div>
-                    <p>texting</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <div id="natural-audio" class="prev">
                 <div>
-                    <p>Send Audio</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
             <div id="natural-video" class="prev">
                 <div>
-                    <p>Record Video</p>
+                    <p class="in-progress"><em>Work in progress...</em></p>
+                </div>
+
+                <div class="help-tips">
+                    <h3>STAY CLAM AND ALERT!</h3>
+                    <p class="help-first">HELP is on the way</p>
+                    <i class="fa-solid fa-location-dot contact-icon-help"></i>
+                    <p class="help-last">From your location, <span class="police-station">Kimironko Police Station</span> is <span class="police-time">9 MINUTES</span> away. We are on our way!</p>
                 </div>
             </div>
 
