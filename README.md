@@ -1,4 +1,4 @@
-# QwikAid
+# QwikAid®
 
 QwikAid is an application that provides quick access to essential services and information during emergencies. It leverages geolocation to offer location-specific services, along with translation capabilities for a user-friendly experience.
 
