@@ -25,7 +25,7 @@ QwikAid is an application that provides quick access to essential services and i
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/QwikAid.git
+   git clone https://github.com/olugbeminiyi2000/QwikAid.git
    cd QwikAid
    ```
 
