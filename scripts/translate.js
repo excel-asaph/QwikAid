@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <div>
             <p class='para'>You are in ${district} district, ${city} city, ${country}</p>
         </div>
-        <div>
-            <p class='para'>Click here to select your langauge</p>        
+        <div id='cleartext'>
+            <p class='para'>Select your langauge below:</p>        
         </div>
     `;
     getDiv.innerHTML = html_content + getDiv.innerHTML;

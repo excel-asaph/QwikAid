@@ -1,7 +1,6 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
-    /* background-color: rgb(42, 145, 126); */
 }
 
 body {
@@ -26,6 +25,74 @@ body {
 
 .main-box .pstyle {
     margin-top: 2rem;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-around; */
+}
+
+#translate-main {
+    background-color:#28314e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    height: 100%;
+    width: inherit;
+}
+
+.hide-translator {
+    display: none;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 65px;
+    color: rgb(245, 245, 245);
+}
+
+p {
+    color: whitesmoke;
+    font-size: 2rem;
+
+}
+
+button {
+    background-color: rgb(165, 42, 42);
+    text-transform: capitalize;
+    color: rgba(245, 245, 245, 0.982);
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#800707a6;
+    transition: 0.2s ease-in-out;
+}
+
+button:active {
+    transform: scale(1.2)
 }
 
 div img {
@@ -33,13 +100,60 @@ div img {
 }
 
 div .goog-te-gadget-simple {
-    background-color: #e50914;
-    font-size: 3rem;
-    margin-bottom: 10rem;
+    background-color: rgb(165, 42, 42);
+    font-size: 2rem;
+    margin-bottom: 1rem;
     border-radius: 1rem;
 }
 
 .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
-    color: white;
-    background-color: #e50914;
+    color: whitesmoke;
+    background-color: rgb(165, 42, 42);
+}
+
+.service-tabs button, .action-tabs button {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.theft-tabs, .health-tabs, .gbv-tabs, .natural-tabs {
+    background-color: #ffffff;
+    border-radius:2rem;
+}
+
+.action-head h1 {
+    color: #28314e;
+}
+
+.call-btn {
+    background-color: rgba(0, 128, 0, 0.651);
+    color: #ffffff;
+}
+
+.current {
+    display: block;   
+}
+
+.prev {
+    display: none;
+}
+
+.first {
+    color: rgb(0, 0, 0) !important;
+}
+
+.second {
+    color: #ffffff;
+}
+
+.third {
+    color: #ffffff;
+}
+
+.fourth {
+    color: #ffffff;
+}
+
+.fifth {
+    color: #ffffff;
 }
