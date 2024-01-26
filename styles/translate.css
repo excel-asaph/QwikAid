@@ -62,7 +62,8 @@ body {
 h1 {
     font-size: 2.8rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 65px;
+    padding-top: 40px;
+    padding-bottom: 2rem;
     color: rgb(245, 245, 245);
 }
 
@@ -111,14 +112,30 @@ div .goog-te-gadget-simple {
     background-color: rgb(165, 42, 42);
 }
 
+.return {
+    font-size: 1rem;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 1rem;
+}
+
 .service-tabs button, .action-tabs button {
     width: 80%;
     margin-bottom: 1rem;
 }
 
 .theft-tabs, .health-tabs, .gbv-tabs, .natural-tabs {
-    background-color: #ffffff;
+    background-color: #d2d3d789;
     border-radius:2rem;
+}
+
+#theft-id button, .health-tabs button, .gbv-tabs button, .natural-tabs button {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+#theft-id .text-btn {
+    background-color: #333333;
 }
 
 .action-head h1 {
@@ -126,10 +143,13 @@ div .goog-te-gadget-simple {
 }
 
 .call-btn {
-    background-color: rgba(0, 128, 0, 0.651);
+    background-color: #3ab349;
     color: #ffffff;
 }
 
+.contact-icon {
+    color: #333333;
+}
 .current {
     display: block;   
 }
@@ -156,4 +176,254 @@ div .goog-te-gadget-simple {
 
 .fifth {
     color: #ffffff;
+}
+
+.call-color {
+    background-color: #3ab349;
+    color: #ffffff;
+}
+
+.button-issue {
+    background-color: rgb(165, 42, 42);
+    text-transform: capitalize;
+    color: rgba(245, 245, 245, 0.982);
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.button-issue:hover {
+    background-color:#800707a6;
+    transition: 0.2s ease-in-out;
+}
+
+.button-issue:active {
+    transform: scale(1.2)
+}
+
+#text-issue {
+    border-radius: 2rem;
+    color: #333333;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 700px;
+    height: 200px;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+} 
+
+.help-tips {
+    margin-top: 3rem;
+}
+
+.help-tips h3 {
+    font-size: 1.6rem;
+    color: #94d69c;
+    margin-bottom: 0.5rem;
+}
+
+.contact-icon-help {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: red;
+}
+
+.help-first, .help-last {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.help-last {
+    padding: 0 4rem 0 4rem;
+    margin-bottom: 2rem;
+}
+
+.police-station {
+    color: #dbcecb; 
+}
+
+.police-time {
+    color: #94d69c;
+    font-weight: 600; 
+}
+
+.in-progress {
+    font-size: 3rem;
+    margin: 3rem 0 5rem 0;
+}
+
+.address {
+    color: rgb(164, 172, 167);
+}
+
+.para-first {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+}
+
+.para {
+    padding-bottom: 1rem;
+}
+
+
+
+@media(max-width: 981px) {
+    #translate-main {
+        flex-wrap: nowrap;
+    }
+
+    .return {
+        font-size: 3rem;
+        padding: 2rem 4rem 2rem 4rem;
+        margin-top: 7rem;
+        margin-bottom: 6rem;
+    }
+
+    .service-tabs, .theft-tabs, .health-tabs, .gbv-tabs, .natural-tabs {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .service-tabs h1, .theft-tabs h1, .health-tabs h1, .natural-tabs h1 {
+        font-size: 4.8rem;
+        padding: 3rem 2rem 7rem 2rem;
+    }
+
+    .gbv-tabs h1 {
+        font-size: 4.8rem;
+        padding: 3rem 2rem 0 2rem;
+    }
+
+    .gbv-tabs .action-head p {
+        padding-bottom: 5rem;
+    }
+
+    .service-tabs button, .theft-tabs button, .health-tabs button, .gbv-tabs button, .natural-tabs button {
+        width: 80%;
+        font-size: 3.5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .theft-tabs {
+        height: 80%;
+    }
+
+    .action-head h1 {
+        color: whitesmoke;
+    }
+    
+    .para-first {
+        font-size: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .para {
+        font-size: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    div .goog-te-gadget-simple {
+        background-color: rgb(165, 42, 42);
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+        border-radius: 1rem;
+        padding: 0 2rem 0 1rem;
+    }
+    
+    .VIpgJd-ZVi9od-xl07Ob-lTBxed span {
+        color: whitesmoke;
+        background-color: rgb(165, 42, 42);
+    }
+
+    .button-services {
+        font-size: 3rem;
+        padding: 2rem 4rem 2rem 4rem;
+    }
+
+    .address {
+        color: rgb(164, 172, 167);
+    }
+
+    .button-issue {
+        background-color: rgb(165, 42, 42);
+        text-transform: capitalize;
+        color: rgba(245, 245, 245, 0.982);
+        margin-top: 1rem;
+        padding: 1rem 3rem;
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: none;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+
+    .button-issue:hover {
+        background-color:#800707a6;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .button-issue:active {
+        transform: scale(1.2)
+    }
+
+    #text-issue {
+        border-radius: 2rem;
+        color: #333333;
+        font-size: 3.5rem;
+        font-weight: 600;
+        width: 80%;
+        height: 400px;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .messagebox-id {
+        margin-bottom: 3rem;
+    }
+
+    .help-tips {
+        margin-top: 6rem;
+    }
+
+    .help-tips h3 {
+        font-size: 3rem;
+        color: #94d69c;
+        margin-bottom: 1rem;
+    }
+
+    .contact-icon-help {
+        margin-top: 2rem;
+        font-size: 3rem;
+        color: red;
+    }
+
+    .help-first, .help-last {
+        font-size: 2.5rem;
+        line-height: 1.4;
+    }
+
+    .help-last {
+        padding: 0 4rem 0 4rem;
+    }
+
+    .police-station {
+        color: #dbcecb; 
+    }
+
+    .police-time {
+        color: #94d69c;
+        font-weight: 600; 
+    }
+
+    .in-progress {
+        font-size: 4rem;
+        margin-bottom: 6rem;
+    }
 }
